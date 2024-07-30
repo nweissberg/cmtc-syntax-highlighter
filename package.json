@@ -1,0 +1,50 @@
+{
+	"name": "cmtc-syntax-highlighter",
+	"displayName": "Cinematic Script Syntax Highlighter",
+	"description": "Syntax highlighting for .cmtc cinematic scripts",
+	"version": "0.1.0",
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "npm run build",
+		"build": "webpack --config webpack.config.js",
+		"watch": "webpack --config webpack.config.js --watch"
+	},
+	"keywords": [
+		"vscode",
+		"extension"
+	],
+	"author": "Nycholas Weissberg (Nyco3D)",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nweissberg/cmtc-syntax-highlighter"
+	},
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "cmtc",
+				"aliases": [
+					"Cinematic Script",
+					"cmtc"
+				],
+				"extensions": [
+					".cmtc"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "cmtc",
+				"scopeName": "source.cmtc",
+				"path": "./syntaxes/cmtc.tmLanguage.json"
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"fileTypes": [
+		"cmtc"
+	],
+	"name": "Cinematic Script",
+	"scopeName": "source.cmtc",
+	"patterns": [
+		{
+			"name": "keyword.tag.cmtc",
+			"match": "<\\w+>"
+		},
+		{
+			"name": "string.quoted.double.cmtc",
+			"begin": "\"",
+			"end": "\""
+		},
+		{
+			"name": "constant.numeric.cmtc",
+			"match": "\\b\\d+\\.?\\d*\\b"
+		},
+		{
+			"name": "constant.vector.cmtc",
+			"match": "\\[\\s*-?\\d+\\.?\\d*\\s*,\\s*-?\\d+\\.?\\d*\\s*,\\s*-?\\d+\\.?\\d*\\s*\\]"
+		}
+	]
+}
