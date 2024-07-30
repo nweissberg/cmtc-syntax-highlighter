@@ -27,6 +27,25 @@
 		"settings": {
 		  "foreground": "#00FFFF" // Cyan for strings
 		}
+	  },
+	  {
+		"scope": "constant.boolean.cmtc",
+		"settings": {
+		  "foreground": "#FF00FF" // Magenta for boolean values
+		}
+	  },
+	  {
+		"scope": "constant.math-symbol.cmtc",
+		"settings": {
+		  "foreground": "#FF8000" // Orange for math symbols
+		}
+	  },
+	  {
+		"scope": "comment.line.cmtc",
+		"settings": {
+		  "foreground": "#6A9955", // Green for comments
+		  "fontStyle": "italic"
+		}
 	  }
 	]
   }

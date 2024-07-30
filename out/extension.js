@@ -48,6 +48,12 @@ function activate(context) {
 							tokenType = 'constant.vector.cmtc';
 						} else if (/\b\d+(\.\d+)?\b/.test(matchedText)) {
 							tokenType = 'constant.numeric.cmtc';
+						} else if (/\b(true|false|null)\b/.test(matchedText)) {
+							tokenType = 'constant.boolean.cmtc';
+						} else if (/[+*/-]/.test(matchedText)) {
+							tokenType = 'constant.math-symbol.cmtc';
+						} else if (matchedText.startsWith('#')) {
+							tokenType = 'comment.line.cmtc';
 						}
 
 						if (tokenType) {

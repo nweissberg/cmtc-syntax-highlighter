@@ -2,9 +2,20 @@
 	"fileTypes": [
 		"cmtc"
 	],
-	"name": "Cinematic Script",
+	"name": "Cinematic",
 	"scopeName": "source.cmtc",
 	"patterns": [
+		{
+			"name": "comment.line.cmtc",
+			"begin": "#",
+			"end": "$",
+			"patterns": [
+				{
+					"name": "comment",
+					"match": "^#.*$"
+				}
+			]
+		},
 		{
 			"name": "keyword.tag.cmtc",
 			"match": "<\\w+>"
@@ -21,6 +32,14 @@
 		{
 			"name": "constant.vector.cmtc",
 			"match": "\\[\\s*-?\\d+\\.?\\d*\\s*,\\s*-?\\d+\\.?\\d*\\s*,\\s*-?\\d+\\.?\\d*\\s*\\]"
+		},
+		{
+			"name": "constant.boolean.cmtc",
+			"match": "\\b(true|false|null)\\b"
+		},
+		{
+			"name": "constant.math-symbol.cmtc",
+			"match": "[\\+\\-\\*/]"
 		}
 	],
 	"repository": {
