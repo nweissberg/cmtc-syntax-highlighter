@@ -13,7 +13,7 @@ Welcome to the **Cinematic Script Syntax Highlighter** for Visual Studio Code! T
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/cmtc-syntax-highlighter.git
+   git clone https://github.com/nweissberg/cmtc-syntax-highlighter
    cd cmtc-syntax-highlighter
    ```
 
@@ -84,8 +84,4 @@ We'd love to hear your feedback or see your contributions! Open issues or submit
 
 - [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 - [TextMate Grammar Guide](https://manual.macromates.com/en/language_grammars)
-
----
-
-Happy scripting! 🎬
 
