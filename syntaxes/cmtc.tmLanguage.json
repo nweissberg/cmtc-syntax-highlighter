@@ -10,7 +10,7 @@
 			"match": "<\\w+>"
 		},
 		{
-			"name": "string.quoted.double.cmtc",
+			"name": "string.double-quoted.cmtc",
 			"begin": "\"",
 			"end": "\""
 		},
@@ -22,5 +22,13 @@
 			"name": "constant.vector.cmtc",
 			"match": "\\[\\s*-?\\d+\\.?\\d*\\s*,\\s*-?\\d+\\.?\\d*\\s*,\\s*-?\\d+\\.?\\d*\\s*\\]"
 		}
-	]
+	],
+	"repository": {
+		"tag": {
+			"name": "keyword.tag.cmtc",
+			"match": "<\\w+>"
+		}
+	},
+	"foldingStartMarker": "\\b(start|if|else|while|for)\\b",
+	"foldingStopMarker": "\\b(end|endif|else|endwhile|endfor)\\b"
 }

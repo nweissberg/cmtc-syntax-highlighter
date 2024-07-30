@@ -3,11 +3,11 @@
 	"displayName": "Cinematic Script Syntax Highlighter",
 	"description": "Syntax highlighting for .cmtc cinematic scripts",
 	"version": "0.1.0",
-	"main": "./out/extension",
+	"main": "./out/extension.js",
 	"scripts": {
 		"vscode:prepublish": "npm run build",
-		"build": "webpack --config webpack.config.js",
-		"watch": "webpack --config webpack.config.js --watch"
+		"build": "echo 'No build step required'",
+		"watch": "echo 'No watch step required'"
 	},
 	"keywords": [
 		"vscode",
@@ -45,6 +45,16 @@
 				"scopeName": "source.cmtc",
 				"path": "./syntaxes/cmtc.tmLanguage.json"
 			}
+		],
+		"themes": [
+			{
+				"label": "Cinematic Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/CinematicTheme-color-theme.json"
+			}
 		]
-	}
+	},
+	"activationEvents": [
+		"onLanguage:cmtc"
+	]
 }
